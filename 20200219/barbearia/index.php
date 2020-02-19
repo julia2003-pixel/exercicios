@@ -16,7 +16,7 @@
                    <h3> BARBEARIA </h3>
                </div>
                 <div class =" panel-body">
-                <a href = "agenda.php" agende seu horario. a>
+                <a href = "agenda.php"> agende seu horario. </a>
                 </div>
     </div>
          </div>  
