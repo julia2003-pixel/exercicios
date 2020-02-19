@@ -12,15 +12,13 @@
         <p>
              bem vindo a barbearia.
          </p>  
-         <div class="col-xs-6col-sm-4">
-             <div class ="panel panel-primary">
-                 <div class="panel-heading">
-                     <h3> class="panel-title">Titulo do Painel</h3>
-                 </div>
-                 <div class =" panel-body">
-                        agende seu horário.
-                 </div>
-             </div>
+               <div class="panel-heading">
+                   <h3> BARBEARIA </h3>
+               </div>
+                <div class =" panel-body">
+                <a href = "agenda.php" agende seu horario. a>
+                </div>
+    </div>
          </div>  
     </div>
 </div>
