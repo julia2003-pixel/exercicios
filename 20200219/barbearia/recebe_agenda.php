@@ -17,7 +17,7 @@ adicionar_agendamento($_POST,"agendamentos.xml");
 		</style>
 	</head>	
 	<body>
-		<a href="form_agenda.php">Cadastrar Novo Agendamento</a> | 
+		<a href="form_agenda.php">Cadastrar Novo Agendamento</a>
 		<a href="agenda.php">Agenda</a>
 		<hr />
 		<h1>Agendamento Barbearia IFSP 2020</h1>
