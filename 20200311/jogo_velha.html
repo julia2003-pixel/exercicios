@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+<title>Jogo da Velha</title>
+<style type="text/css">
+<!--
+.tabela{
+width: 80px;
+height: 70px;
+background: white;
+font-size: 80px;
+color: black;
+font: times;
+}
+.ble{
+background: red;
+}
+
+</style>
+<script language="JavaScript" type="text/javascript">
+<!--
+letra = "X";
+ 
+function joga(quadrado){
+    quadradoclicado = document.getElementById(quadrado).innerHTML;
+   if (quadradoclicado == "X" || quadradoclicado == "O"){
+       alert("este quadrado ja foi escolhido!");
+   }else{
+        document.getElementById(quadrado).innerHTML = letra;
+        if (letra == "X"){
+            letra = "O";
+        }else{
+            letra = "X";
+        }
+   }
+}
+ 
+function verif(){
+   qua1 = document.getElementById('quad1').innerHTML;
+   qua2 = document.getElementById('quad2').innerHTML;
+   qua3 = document.getElementById('quad3').innerHTML;
+   qua4 = document.getElementById('quad4').innerHTML;
+   qua5 = document.getElementById('quad5').innerHTML;
+   qua6 = document.getElementById('quad6').innerHTML;
+   qua7 = document.getElementById('quad7').innerHTML;
+   qua8 = document.getElementById('quad8').innerHTML;
+   qua9 = document.getElementById('quad9').innerHTML;
+   if (((qua1 != '') && (qua2 != '') && (qua3 != '') && (qua1 == qua2) && (qua2 == qua3)) || ((qua1 != '') && (qua5 != '') && (qua9 != '') && (qua1 == qua2) && (qua5 == qua9)) || ((qua1 != '') && (qua4 != '') && (qua7 != '') && (qua1 == qua4) && (qua4 == qua7)) || ((qua4 != '') && (qua5 != '') && (qua6 != '') && (qua4 == qua5) && (qua5 == qua6)) || ((qua7 != '') && (qua8 != '') && (qua9 != '') && (qua7 == qua8) && (qua8 == qua9)) || ((qua2 != '') && (qua5 != '') && (qua8 != '') && (qua2 == qua5) && (qua5 == qua8)) || ((qua3 != '') && (qua6 != '') && (qua9 != '') && (qua3 == qua6) && (qua6 == qua9)) || ((qua7 != '') && (qua5 != '') && (qua3 != '') && (qua7 == qua5) && (qua5 == qua3))){
+       alert('Voce ganhou!');
+      novo();
+   }
+}
+ 
+function novo(){
+    for (i=1; i<4; i++){
+       for (j=1; j<4; j++){
+          nomequadrado = 'quad' + i + j
+           document.getElementById(nomequadrado).innerHTML = '';
+      
+      }
+   }
+}
+ 
+ 
+//-->
+</script>
+ 
+</head>
+<body>
+<table class="ble">
+ 
+<tr>
+<td align="center" valign="middle" id="quad1" class="tabela" onclick="joga(this.id);verif();"></td>
+<td align="center" valign="middle" id="quad2" class="tabela" onclick="joga(this.id);verif();"></td>
+<td align="center" valign="middle" id="quad3" class="tabela" onclick="joga(this.id);verif();"></td>
+</tr>
+ 
+<tr>
+<td align="center" valign="middle" id="quad4" class="tabela" onclick="joga(this.id);verif();"></td>
+<td align="center" valign="middle" id="quad5" class="tabela" onclick="joga(this.id);verif();"></td>
+<td align="center" valign="middle" id="quad6" class="tabela" onclick="joga(this.id);verif();"></td>
+</tr>
+ 
+<tr>
+<td align="center" valign="middle" id="quad7" class="tabela" onclick="joga(this.id);verif();"></td>
+<td align="center" valign="middle" id="quad8" class="tabela" onclick="joga(this.id);verif();"></td>
+<td align="center" valign="middle" id="quad9" class="tabela" onclick="joga(this.id);verif();"></td>
+</tr>
+ 
+</table>
+<br><input type="button" name="limpar" value="Novo jogo" onclick="novo();" />
+</body>
+</html>
